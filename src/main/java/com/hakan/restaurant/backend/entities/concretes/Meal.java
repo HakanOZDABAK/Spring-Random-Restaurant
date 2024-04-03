@@ -18,4 +18,9 @@ public class Meal {
     private String mealName;
     private String category;
 
+
+    @ManyToOne()
+    @JoinColumn(name="meal_id")
+    private Like like;
+
 }
